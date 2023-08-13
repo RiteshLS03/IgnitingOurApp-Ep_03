@@ -1,0 +1,69 @@
+1)        What is NPM ?
+
+It's an package manager. In our web app we need some superpowers as Minify our App , Bundle things up , Tree Shaking , (HMR) Hot Module Replacement , Code Spliting  and many more . for that we use some helper packages and that come inside NPM.
+
+2)       What is 'Parcel/Webpack' ? Why do we need it ?
+
+Parcel and Webpack both are Bundler and package. In our web app we need some superpowers as Minify our App , Bundle things up , Tree Shaking , (HMR) Hot Module Replacement , Code Spliting  and many more . for that we use some helper packages and it makes our web app faster and less time consuming
+
+>       What is '.parcel-cache' ?
+
+It's a folder come inside the parcel bundler. and stores some caching files to don't need to analyze the app from the scratch
+
+>       What is 'npx' ?
+
+npx is basically used for eXecuting the packages. for example "npx parcel index.html" and by using that we are telling the parcel an entry point of our web app
+
+3)      What is difference between 'dependencies' VS 'devDependencies' ?
+
+Dependencies - These are the some packages that we need to run our web app properly. suppose we used React and ReactDOM dependencies on our web app so these are the dependencies need in our server to run properly from public access
+
+devDependencies - As we seen in Dependencies we can run our web app with it but in case of devDependencies we need these dependencies while developing the web app. for ex. we used the parcel as devDependencies because it hepled us in lot of things as HMR , Tree Shaking , Port Number Handling etc.
+
+>       What is Tree Shaking ?
+
+Tree Shaking is a technique where the bundler eliminates/removes the dead /unused code and make our web app much faster to load. also the removing the console.log come inside it.
+
+4)      What is Hot Module Replacement ?
+
+Hot Module Replacement (HMR) it's an a superpower of parcel Bundler. It's very useful while developing the web app . certainly it shows changes on webpage withour refreshing the page.
+
+5)      List down your facourite 5 superpowers of parcel and describe any 3 of them in your own words.
+
+Parcel is a Beast. It makes development much better there are so many superpowers of parcel as following.
+
+1) Hot Module Replacement 2) Tree Shaking 3) Code Splitting 
+4) Removing Console.log   5)Minify        6)Bundling Things
+and more
+
+1) Refresh the page on changes 
+2) Eliminates the Dead Code makes web app faster
+3) Makes Code into smaller chunks so browser can consume it faster
+
+6)      What is '.gitignore' ? What should we add and not add into it ?
+
+.gitignore it's file that helps us to push important files on github . basically in this file we add the names of the file/folder to ingore while pushing/uploading to the github. for ex. 'node_module' folder there is no need to be on github. github can regenerate the 'node_modules' by itself. we just need to add this folder's name on the .gitignore file. lastly we should not put those files name that can't be regenerate.
+
+7)      What is the difference between 'package.json' and 'package-lock.json' ?
+
+There is difference between both of the files package.json files contains the information about the project which are the dependencies and devDependencies are used. which version of them is currently in use.
+
+on the other hand of package-lock.json it's also kind of package.json file but it took snapshot of all other things as dependencies and it's nested dependencies (Transitive Dependencies) which version of the dependenceis is used while the development of the project 
+
+>       should we not modify 'package-lock.json' ?
+
+yes , we should not modify the both files package.json and package-lock.json file cause of they store essential information about the project's configuration and dependencies.
+
+8)      What is 'node_modules' ? Is it a good idea to push that on git ?
+
+'node_modules' is a folder that is like database of npm. we import packages from this folder when we need it. 
+
+no it's not good idea to push it on git because of git can regenerate it 
+
+9)      What is the 'dist' folder ? 
+
+The /dist folder contains the minimized version of the source code. The code present in the /dist folder is actually the code which is used on production web applications
+
+10)    What is 'browserlists' ?
+
+It's an package it basically used for pollyfills means to ensure it should work on browser. shares the list of target browsers between various frontend build tools

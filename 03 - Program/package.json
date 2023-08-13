@@ -1,0 +1,11 @@
+{
+  "name": "03---program",
+  "version": "1.0.0",
+  "description": "this is the learning code",
+  "main": "Index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ritesh Narwade",
+  "license": "ISC"
+}
